@@ -1,0 +1,2 @@
+c:\tfs.codeplex\xaml\MVA\201311_Blend\Behaviors\Behaviors.csproj;neutral
+c:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\Shared.csproj;neutral

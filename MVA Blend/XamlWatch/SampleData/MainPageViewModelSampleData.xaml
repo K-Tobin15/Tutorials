@@ -1,0 +1,84 @@
+﻿<ViewModels:MainPageViewModel xmlns:ViewModels="using:XamlWatch.ViewModels" xmlns:Models="using:XamlWatch.Models" xmlns:Imaging="using:Windows.UI.Xaml.Media.Imaging" Day="Maecenas class nam aenean" HoursAngle="408.68" MinutesAngle="147.83" Orientation="Snap" SecondsAngle="230.38">
+	<ViewModels:MainPageViewModel.Colors>
+		<Models:ColorModel Color="#FF168025" ColSpan="57" Index="86" Name="Curae mauris aliquam" RowSpan="62"/>
+		<Models:ColorModel Color="#FFA24755" ColSpan="22" Index="30" Name="Praesent sed" RowSpan="61"/>
+		<Models:ColorModel Color="#FF4AA45A" ColSpan="86" Index="38" Name="Integer nullam cras" RowSpan="67"/>
+		<Models:ColorModel Color="#FF51919A" ColSpan="37" Index="51" Name="Dis aptent accumsan" RowSpan="13"/>
+		<Models:ColorModel Color="#FF27438A" ColSpan="93" Index="52" Name="Vestibulum curabitur est" RowSpan="43"/>
+		<Models:ColorModel Color="#FF238990" ColSpan="28" Index="36" Name="Hac donec phasellus duis" RowSpan="38"/>
+		<Models:ColorModel Color="#FF31AA69" ColSpan="92" Index="96" Name="Nunc leo adipiscing etiam" RowSpan="10"/>
+		<Models:ColorModel Color="#FF862ACC" ColSpan="69" Index="11" Name="Parturient quisque" RowSpan="21"/>
+		<Models:ColorModel Color="#FF5AA48A" ColSpan="43" Index="76" Name="Consequat amet vivamus fusce" RowSpan="50"/>
+		<Models:ColorModel Color="#FF4FDDDA" ColSpan="84" Index="37" Name="Aliquam aliquet bibendum" RowSpan="25"/>
+	</ViewModels:MainPageViewModel.Colors>
+	<ViewModels:MainPageViewModel.Faces>
+		<Models:FaceModel ColSpan="59" Index="45" Path="Lorem auctor" RowSpan="77"/>
+		<Models:FaceModel ColSpan="28" Index="81" Path="Nec dictumst eleifend" RowSpan="47"/>
+		<Models:FaceModel ColSpan="18" Index="63" Path="Vestibulum vestibulum dignissim blandit" RowSpan="11"/>
+		<Models:FaceModel ColSpan="31" Index="60" Path="Commodo non morbi elementum nulla" RowSpan="73"/>
+		<Models:FaceModel ColSpan="57" Index="33" Path="Congue conubia proin cursus cubilia" RowSpan="96"/>
+		<Models:FaceModel ColSpan="16" Index="72" Path="Ante adipiscing" RowSpan="66"/>
+		<Models:FaceModel ColSpan="30" Index="78" Path="Dictum parturient" RowSpan="13"/>
+		<Models:FaceModel ColSpan="88" Index="36" Path="Dapibus vestibulum facilisis" RowSpan="51"/>
+		<Models:FaceModel ColSpan="78" Index="85" Path="Vestibulum adipiscing per egestas euismod" RowSpan="21"/>
+		<Models:FaceModel ColSpan="12" Index="54" Path="Fermentum facilisi" RowSpan="51"/>
+	</ViewModels:MainPageViewModel.Faces>
+	<ViewModels:MainPageViewModel.Purchases>
+		<Models:PurchaseModel ColSpan="57" Date="11/11/2013 17:47:40" Index="35" RowSpan="84">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+		<Models:PurchaseModel ColSpan="47" Date="11/11/2013 17:47:40" Index="75" RowSpan="19">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+		<Models:PurchaseModel ColSpan="38" Date="11/11/2013 17:47:40" Index="89" RowSpan="91">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+		<Models:PurchaseModel ColSpan="19" Date="11/11/2013 17:47:40" Index="95" RowSpan="90">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+		<Models:PurchaseModel ColSpan="20" Date="11/11/2013 17:47:40" Index="37" RowSpan="92">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+		<Models:PurchaseModel ColSpan="22" Date="11/11/2013 17:47:40" Index="80" RowSpan="19">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+		<Models:PurchaseModel ColSpan="67" Date="11/11/2013 17:47:40" Index="71" RowSpan="58">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+		<Models:PurchaseModel ColSpan="19" Date="11/11/2013 17:47:40" Index="22" RowSpan="71">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+		<Models:PurchaseModel ColSpan="96" Date="11/11/2013 17:47:40" Index="36" RowSpan="49">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+		<Models:PurchaseModel ColSpan="19" Date="11/11/2013 17:47:40" Index="35" RowSpan="16">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+	</ViewModels:MainPageViewModel.Purchases>
+	<ViewModels:MainPageViewModel.SelectedColor>
+		<Models:ColorModel Color="#FF179A52" ColSpan="45" Index="26" Name="Mus convallis" RowSpan="79"/>
+	</ViewModels:MainPageViewModel.SelectedColor>
+	<ViewModels:MainPageViewModel.SelectedFace>
+		<Models:FaceModel ColSpan="91" Index="11" Path="Arcu feugiat" RowSpan="34"/>
+	</ViewModels:MainPageViewModel.SelectedFace>
+</ViewModels:MainPageViewModel>

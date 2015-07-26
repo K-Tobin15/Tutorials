@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JNIXON-XPSW81</Machine>
+    <WindowsUser>jnixon</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>ed9860b7-a6fa-49a7-bc7a-32ef29972e18</PackageIdentityName>
+    <RegisteredManifestChecksum>033CB03EFF96A8630E47C1DB854BCFAA5DAC51729E5BC207E7256C667CEC3874</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>ed9860b7-a6fa-49a7-bc7a-32ef29972e18_1.0.0.0_neutral__gkb6srmdnj4yr</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>ed9860b7-a6fa-49a7-bc7a-32ef29972e18_gkb6srmdnj4yr!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>ed9860b7-a6fa-49a7-bc7a-32ef29972e18</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=jnixon</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Behaviors\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-11-12T04:08:24.261</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Behaviors\bin\Debug\Behaviors.exe">
+      <PackagePath>Behaviors.exe</PackagePath>
+      <Modified>2013-11-12T04:10:28.688</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.dll">
+      <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
+      <Modified>2013-09-28T01:11:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactivity.dll">
+      <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
+      <Modified>2013-09-28T01:11:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\bin\Debug\Shared.dll">
+      <PackagePath>Shared.dll</PackagePath>
+      <Modified>2013-11-11T19:59:14.636</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Behaviors\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-04-19T02:22:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Behaviors\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-04-19T02:22:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Behaviors\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-04-19T02:22:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Behaviors\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-04-19T02:22:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Behaviors\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2013-11-12T04:00:55.671</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Behaviors\bin\Debug\Views\MainPage.xbf">
+      <PackagePath>Views\MainPage.xbf</PackagePath>
+      <Modified>2013-11-12T04:10:00.337</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\bin\Debug\Styles\AppBarHint.xbf">
+      <PackagePath>Shared\Styles\AppBarHint.xbf</PackagePath>
+      <Modified>2013-11-11T19:59:14.383</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Beverly Crusher.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Beverly Crusher.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.646</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Christine Chapel.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Christine Chapel.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.643</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Deanna Troi.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Deanna Troi.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.640</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Dr. Phlox.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Dr. Phlox.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.768</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Geordi La Forge.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Geordi La Forge.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.764</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Hero.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Hero.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:30.006</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Hikaru Sulu.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Hikaru Sulu.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.759</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Hoshi Sato.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Hoshi Sato.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.771</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\James Kirk.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\James Kirk.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.766</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Jean-Luc Picard.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Jean-Luc Picard.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.761</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Jonathan Archer.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Jonathan Archer.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.853</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Leonard McCoy.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Leonard McCoy.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.776</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Malcolm Reed.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Malcolm Reed.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.797</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Montgomery Scott.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Montgomery Scott.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.801</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Mr. Data.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Mr. Data.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.868</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Mr. Spock.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Mr. Spock.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.836</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Mr. Worf.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Mr. Worf.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.822</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Nyota Uhura.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Nyota Uhura.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.795</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Pavel Chekov.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Pavel Chekov.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.812</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Sub-Commander TPol.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Sub-Commander TPol.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.840</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Travis Mayweather.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Travis Mayweather.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.856</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\Trip Tucker.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\Trip Tucker.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.828</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Shared\SampleData\StarTrek\Images\William Riker.jpg">
+      <PackagePath>Shared\SampleData\StarTrek\Images\William Riker.jpg</PackagePath>
+      <Modified>2013-11-11T19:55:29.967</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Behaviors\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-11-12T04:08:24.182</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

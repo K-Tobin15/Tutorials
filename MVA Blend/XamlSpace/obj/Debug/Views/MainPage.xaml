@@ -1,0 +1,114 @@
+﻿<common:BaseView
+    xmlns:common="using:Shared.Common"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XamlSpace.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Controls="using:Shared.Controls"
+    xmlns:ViewModels="using:XamlSpace.ViewModels"
+    xmlns:Converters="using:Shared.Converters"
+    x:Class="XamlSpace.Views.MainPage"
+    mc:Ignorable="d">
+
+    <common:BaseView.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ms-appx:///Styles/Custom.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <Converters:CollapsedWhenVertical x:Key="CollapsedWhenVertical"/>
+            <Converters:ReverseOrientationConverter x:Key="ReverseOrientationConverter"/>
+            <Converters:OrientationConverter x:Key="OrientationConverter"/>
+        </ResourceDictionary>
+    </common:BaseView.Resources>
+
+    <common:BaseView.BottomAppBar>
+        <AppBar>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal"/>
+                <StackPanel Grid.Column="1" HorizontalAlignment="Right" Orientation="Horizontal">
+                    <AppBarButton HorizontalAlignment="Stretch" Label="Refresh" VerticalAlignment="Stretch" Icon="RepeatAll" Command="{Binding SetupCommand, Mode=OneWay}"/>
+                </StackPanel>
+            </Grid>
+        </AppBar>
+    </common:BaseView.BottomAppBar>
+
+    <common:BaseView.DataContext>
+        <ViewModels:MainPageViewModel />
+    </common:BaseView.DataContext>
+
+    <Grid Background="#C80F0F">
+        <Hub Header="{Binding Title}" Orientation="{Binding Orientation, Converter={StaticResource OrientationConverter}}" Margin="0,0,0,16">
+
+            <HubSection x:Name="HeroHubSection" ContentTemplate="{StaticResource MyShipTemplate}" Width="500" Visibility="{Binding Orientation, Converter={StaticResource CollapsedWhenVertical}}">
+                <HubSection.Background>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Images/Hero.jpg" />
+                </HubSection.Background>
+            </HubSection>
+
+            <HubSection Header="Original Series">
+                <HubSection.Background>
+                    <SolidColorBrush Color="Black" Opacity=".6" />
+                </HubSection.Background>
+                <DataTemplate>
+                    <Viewbox Margin="0,0,50,0">
+                        <Controls:MyGridView ItemsSource="{Binding TosCharacters}" ItemTemplate="{StaticResource MyCharacterTemplate}" SelectedItem="{Binding SelectedCharacter, Mode=TwoWay}">
+                            <Controls:MyGridView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <VariableSizedWrapGrid ItemHeight="1" ItemWidth="1" Orientation="{Binding Orientation, Converter={StaticResource ReverseOrientationConverter}}" MaximumRowsOrColumns="{Binding TosMax}" />
+                                </ItemsPanelTemplate>
+                            </Controls:MyGridView.ItemsPanel>
+                        </Controls:MyGridView>
+                    </Viewbox>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Header="Enterprise">
+                <HubSection.Background>
+                    <SolidColorBrush Color="Black" Opacity=".4" />
+                </HubSection.Background>
+                <DataTemplate>
+                    <Viewbox Margin="0,0,50,0">
+                        <Controls:MyGridView ItemsSource="{Binding EntCharacters}" ItemTemplate="{StaticResource MyCharacterTemplate}" SelectedItem="{Binding SelectedCharacter, Mode=TwoWay}">
+                            <Controls:MyGridView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <VariableSizedWrapGrid ItemHeight="1" ItemWidth="1" Orientation="{Binding Orientation, Converter={StaticResource ReverseOrientationConverter}}" MaximumRowsOrColumns="{Binding EntMax}" />
+                                </ItemsPanelTemplate>
+                            </Controls:MyGridView.ItemsPanel>
+                        </Controls:MyGridView>
+                    </Viewbox>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Header="Next Generation">
+                <HubSection.Background>
+                    <SolidColorBrush Color="Black" Opacity=".2" />
+                </HubSection.Background>
+                <DataTemplate>
+                    <Viewbox Margin="0,0,50,0">
+                        <Controls:MyGridView ItemsSource="{Binding TngCharacters}" ItemTemplate="{StaticResource MyCharacterTemplate}" SelectedItem="{Binding SelectedCharacter, Mode=TwoWay}">
+                        <Controls:MyGridView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <VariableSizedWrapGrid ItemHeight="1" ItemWidth="1" Orientation="{Binding Orientation, Converter={StaticResource ReverseOrientationConverter}}" MaximumRowsOrColumns="{Binding TngMax}" />
+                            </ItemsPanelTemplate>
+                        </Controls:MyGridView.ItemsPanel>
+                    </Controls:MyGridView>
+                        </Viewbox>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Header="Advertisement">
+                <DataTemplate>
+                    <Rectangle Fill="LightGoldenrodYellow" Width="300" Height="500" />
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+        <Controls:AppBarHint />
+    </Grid>
+
+</common:BaseView>
+

@@ -1,0 +1,89 @@
+﻿<common:BaseView
+    xmlns:common="using:Shared.Common" xmlns:Controls="using:Shared.Controls" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XamlMath.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ViewModels="using:XamlMath.ViewModels"
+    x:Class="XamlMath.Views.MainPage"
+    mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton Label="Run All" Icon="Play" Command="{Binding RunAllCommand, Mode=OneWay}"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Page.DataContext>
+        <ViewModels:MainPageViewModel />
+    </Page.DataContext>
+
+    <Grid Background="SteelBlue">
+        <Hub Margin="0,0,0,16">
+            <Hub.Header>
+                <StackPanel Orientation="Horizontal">
+                    <Image Height="100" Width="100" Margin="0,-40,40,0" Source="ms-appx:///Assets/Logo.png" Stretch="UniformToFill" />
+                    <TextBlock>XAML Mathemathics</TextBlock>
+                </StackPanel>
+            </Hub.Header>
+            <HubSection Width="300" Header="Addition" IsHeaderInteractive="False">
+                <HubSection.Background>
+                    <SolidColorBrush Color="Black" Opacity=".80" />
+                </HubSection.Background>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBox Width="200" FontSize="50" PlaceholderText=" " Text="{Binding Augend, Mode=TwoWay}" TextAlignment="Right" />
+                        <TextBlock HorizontalAlignment="Center" TextAlignment="Center" FontSize="100">+</TextBlock>
+                        <TextBox Width="200" FontSize="50" PlaceholderText=" " Text="{Binding Addend, Mode=TwoWay}" TextAlignment="Right" />
+                        <Button HorizontalAlignment="Center" FontSize="100" Style="{StaticResource TextBlockButtonStyle}" Command="{Binding AddCommand, Mode=OneWay}">=</Button>
+                        <TextBox Width="200" FontSize="50" PlaceholderText=" " Text="{Binding Sum, Mode=OneWay}" IsReadOnly="True" TextAlignment="Right" IsTabStop="False" />
+                    </StackPanel>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Width="300" Header="Division" IsHeaderInteractive="False">
+                <HubSection.Background>
+                    <SolidColorBrush Color="Black" Opacity=".60" />
+                </HubSection.Background>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBox Width="200" FontSize="50" PlaceholderText=" " Text="{Binding Dividend, Mode=TwoWay}" TextAlignment="Right" />
+                        <TextBlock HorizontalAlignment="Center" TextAlignment="Center" FontSize="100">÷</TextBlock>
+                        <TextBox Width="200" FontSize="50" PlaceholderText=" " Text="{Binding Divisor, Mode=TwoWay}" TextAlignment="Right" />
+                        <Button HorizontalAlignment="Center" FontSize="100" Style="{StaticResource TextBlockButtonStyle}" Command="{Binding DivideCommand, Mode=OneWay}">=</Button>
+                        <TextBox Width="200" FontSize="50" PlaceholderText=" " Text="{Binding Quotient, Mode=OneWay}" IsReadOnly="True" TextAlignment="Right" IsTabStop="False" />
+                    </StackPanel>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Width="300" Header="Multiplication" IsHeaderInteractive="False">
+                <HubSection.Background>
+                    <SolidColorBrush Color="Black" Opacity=".40" />
+                </HubSection.Background>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBox Width="200" FontSize="50" PlaceholderText=" " Text="{Binding Multiplicand, Mode=TwoWay}" TextAlignment="Right" />
+                        <TextBlock HorizontalAlignment="Center" TextAlignment="Center" FontSize="100">×</TextBlock>
+                        <TextBox Width="200" FontSize="50" PlaceholderText=" " Text="{Binding Multiplier, Mode=TwoWay}" TextAlignment="Right" />
+                        <Button HorizontalAlignment="Center" FontSize="100" Style="{StaticResource TextBlockButtonStyle}" Command="{Binding MultiplyCommand, Mode=OneWay}">=</Button>
+                        <TextBox Width="200" FontSize="50" PlaceholderText=" " Text="{Binding Product, Mode=OneWay}" IsReadOnly="True" TextAlignment="Right" IsTabStop="False" />
+                    </StackPanel>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Width="300" Header="Subtraction" IsHeaderInteractive="False">
+                <HubSection.Background>
+                    <SolidColorBrush Color="Black" Opacity=".20" />
+                </HubSection.Background>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBox Width="200" FontSize="50" PlaceholderText=" " Text="{Binding Minuend, Mode=TwoWay}" TextAlignment="Right" />
+                        <TextBlock HorizontalAlignment="Center" TextAlignment="Center" FontSize="100">−</TextBlock>
+                        <TextBox Width="200" FontSize="50" PlaceholderText=" " Text="{Binding Subtrahend, Mode=TwoWay}" TextAlignment="Right" />
+                        <Button HorizontalAlignment="Center" FontSize="100" Style="{StaticResource TextBlockButtonStyle}" Command="{Binding SubtractCommand, Mode=OneWay}">=</Button>
+                        <TextBox Width="200" FontSize="50" PlaceholderText=" " Text="{Binding Difference, Mode=OneWay}" IsReadOnly="True" TextAlignment="Right" IsTabStop="False" />
+                    </StackPanel>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+        <Controls:AppBarHint />
+    </Grid>
+</common:BaseView>
+

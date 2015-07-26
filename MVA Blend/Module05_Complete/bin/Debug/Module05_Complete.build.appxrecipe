@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JNIXON-XPSW81</Machine>
+    <WindowsUser>jnixon</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>3a4b6168-5734-42bb-b00d-48245c7450be</PackageIdentityName>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\bin\Debug\Module05_Complete.exe">
+      <PackagePath>Module05_Complete.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\bin\Debug\Views\MainPage.xbf">
+      <PackagePath>Views\MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\bin\Debug\Views\Settings.xbf">
+      <PackagePath>Views\Settings.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

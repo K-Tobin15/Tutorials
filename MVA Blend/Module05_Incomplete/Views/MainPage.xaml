@@ -1,0 +1,90 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Module05_Incomplete"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ViewModels="using:Module05_Incomplete.ViewModels"
+    x:Class="Module05_Incomplete.MainPage"
+    mc:Ignorable="d">
+	<Page.Resources>
+		<DataTemplate x:Key="ColorInfoTemplate">
+			<Grid HorizontalAlignment="Left" Width="250" Height="100" Background="{Binding Brush, Mode=OneWay}"  >
+				<StackPanel VerticalAlignment="Bottom" Background="{StaticResource ListViewItemOverlayBackgroundThemeBrush}">
+					<TextBlock Text="{Binding Name}" Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}" Style="{StaticResource TitleTextBlockStyle}" Height="60" TextWrapping="NoWrap" Margin="15,0,15,0"/>
+				</StackPanel>
+			</Grid>
+		</DataTemplate>
+		<CollectionViewSource x:Key="ColorsGroupedByGroupInfo" IsSourceGrouped="True" ItemsPath="Colors" Source="{Binding Groups}"/>
+		<DataTemplate x:Key="GroupInfoTemplate">
+			<Grid Height="110" Width="250" Margin="10" >
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+				<Border Background="{Binding Colors[0].Brush, Mode=OneWay}" Width="110" Height="110"/>
+				<StackPanel Grid.Column="1" Margin="10,0,0,0" VerticalAlignment="Center">
+					<TextBlock Text="{Binding Name}" Style="{StaticResource TitleTextBlockStyle}" FontSize="26.667"/>
+				</StackPanel>
+			</Grid>
+		</DataTemplate>
+	</Page.Resources>
+	<Page.BottomAppBar>
+		<CommandBar>
+			<AppBarButton Label="Recent" Icon="Street">
+				<AppBarButton.Flyout>
+					<Flyout>
+						<Grid>
+							<ListView ItemsSource="{Binding Recent}" ItemTemplate="{StaticResource ColorInfoTemplate}" SelectedItem="{Binding Selected, Mode=TwoWay}"/>
+						</Grid>
+					</Flyout>
+				</AppBarButton.Flyout>
+			</AppBarButton>
+		</CommandBar>
+	</Page.BottomAppBar>
+
+	<Page.DataContext>
+		<ViewModels:MainPageViewModel/>
+	</Page.DataContext>
+
+	<Grid Background="{Binding Selected.Brush, Mode=OneWay}">
+		<SemanticZoom HorizontalAlignment="Left" VerticalAlignment="Top" ViewChangeStarted="SemanticZoom_ViewChangeStarted">
+			<SemanticZoom.ZoomedInView>
+				<GridView ItemTemplate="{StaticResource ColorInfoTemplate}" ItemsSource="{Binding Source={StaticResource ColorsGroupedByGroupInfo}}" IsSwipeEnabled="False" SelectionMode="Single" Padding="120,140,0,10" Height="768" Width="1366" SelectedItem="{Binding Selected, Mode=TwoWay}">
+					<GridView.GroupStyle>
+						<GroupStyle>
+							<GroupStyle.HeaderTemplate>
+								<DataTemplate>
+									<Grid Margin="1,0,0,6" >
+										<StackPanel Orientation="Horizontal">
+											<TextBlock Text="{Binding Name}" Margin="3,-7,10,10" Style="{StaticResource SubheaderTextBlockStyle}" TextWrapping="NoWrap"/>
+										</StackPanel>
+									</Grid>
+								</DataTemplate>
+							</GroupStyle.HeaderTemplate>
+						</GroupStyle>
+					</GridView.GroupStyle>
+					<GridView.ItemsPanel>
+						<ItemsPanelTemplate>
+							<ItemsWrapGrid GroupPadding="0,0,70,0"/>
+						</ItemsPanelTemplate>
+					</GridView.ItemsPanel>
+				</GridView>
+			</SemanticZoom.ZoomedInView>
+			<SemanticZoom.ZoomedOutView>
+				<GridView ItemTemplate="{StaticResource GroupInfoTemplate}" ItemsSource="{Binding Groups}" IsSwipeEnabled="False" SelectionMode="Single" Margin="0,0,-6,-21" VerticalAlignment="Center">
+					<GridView.Resources>
+						<ItemsPanelTemplate x:Key="ItemsPanelTemplate1">
+							<StackPanel Orientation="Horizontal"/>
+						</ItemsPanelTemplate>
+					</GridView.Resources>
+					<GridView.ItemsPanel>
+						<StaticResource ResourceKey="ItemsPanelTemplate1"/>
+					</GridView.ItemsPanel>
+				</GridView>
+			</SemanticZoom.ZoomedOutView>
+		</SemanticZoom>
+		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Colors App" VerticalAlignment="Top" Style="{StaticResource HeaderTextBlockStyle}" Margin="120,40,0,0"/>
+	</Grid>
+    
+</Page>

@@ -1,0 +1,17 @@
+﻿<common:BaseSplash
+    xmlns:common="using:Shared.Common"
+    x:Class="XamlMath.Views.Splash"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XamlMath.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FF1C3448">
+        <ProgressBar VerticalAlignment="Top" IsIndeterminate="True" HorizontalAlignment="Stretch" Foreground="White" />
+        <Canvas>
+            <Image x:Name="MyImage" Source="ms-appx:///Assets/SplashScreen.png" />
+        </Canvas>
+    </Grid>
+</common:BaseSplash>

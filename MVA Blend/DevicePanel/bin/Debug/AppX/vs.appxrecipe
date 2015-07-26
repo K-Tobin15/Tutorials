@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JNIXON-XPSW81</Machine>
+    <WindowsUser>jnixon</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>33951e77-a97e-4f05-a5d2-965602357673</PackageIdentityName>
+    <RegisteredManifestChecksum>DD6E0F7D6D5577BA552A7372EB0666122DCA3E9020BA5DF6B7A78747C2743CEA</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>33951e77-a97e-4f05-a5d2-965602357673_1.0.0.0_neutral__m8wq55j45v6p0</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>33951e77-a97e-4f05-a5d2-965602357673_m8wq55j45v6p0!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>33951e77-a97e-4f05-a5d2-965602357673</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Jerry</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\tfs.codeplex\xaml\MVA\201311_Blend\DevicePanel\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-11-11T21:51:31.521</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\tfs.codeplex\xaml\MVA\201311_Blend\DevicePanel\bin\Debug\DevicePanel.exe">
+      <PackagePath>DevicePanel.exe</PackagePath>
+      <Modified>2013-11-12T15:23:37.135</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\tfs.codeplex\xaml\MVA\201311_Blend\DevicePanel\DataModel\SampleData.json">
+      <PackagePath>DataModel\SampleData.json</PackagePath>
+      <Modified>2013-11-11T19:55:28.994</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\tfs.codeplex\xaml\MVA\201311_Blend\DevicePanel\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-11-11T19:55:28.975</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\tfs.codeplex\xaml\MVA\201311_Blend\DevicePanel\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-11-11T19:55:28.976</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\tfs.codeplex\xaml\MVA\201311_Blend\DevicePanel\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-11-11T19:55:29.122</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\tfs.codeplex\xaml\MVA\201311_Blend\DevicePanel\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-11-11T19:55:28.980</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\tfs.codeplex\xaml\MVA\201311_Blend\DevicePanel\Assets\LightGray.png">
+      <PackagePath>Assets\LightGray.png</PackagePath>
+      <Modified>2013-11-11T19:55:28.977</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\tfs.codeplex\xaml\MVA\201311_Blend\DevicePanel\Assets\MediumGray.png">
+      <PackagePath>Assets\MediumGray.png</PackagePath>
+      <Modified>2013-11-11T19:55:28.976</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\tfs.codeplex\xaml\MVA\201311_Blend\DevicePanel\Assets\DarkGray.png">
+      <PackagePath>Assets\DarkGray.png</PackagePath>
+      <Modified>2013-11-11T19:55:28.966</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\tfs.codeplex\xaml\MVA\201311_Blend\DevicePanel\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2013-11-11T21:51:30.963</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\tfs.codeplex\xaml\MVA\201311_Blend\DevicePanel\bin\Debug\GroupedItemsPage.xbf">
+      <PackagePath>GroupedItemsPage.xbf</PackagePath>
+      <Modified>2013-11-12T15:23:36.894</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\tfs.codeplex\xaml\MVA\201311_Blend\DevicePanel\bin\Debug\GroupDetailPage.xbf">
+      <PackagePath>GroupDetailPage.xbf</PackagePath>
+      <Modified>2013-11-11T21:51:30.968</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\tfs.codeplex\xaml\MVA\201311_Blend\DevicePanel\bin\Debug\ItemDetailPage.xbf">
+      <PackagePath>ItemDetailPage.xbf</PackagePath>
+      <Modified>2013-11-11T21:51:30.971</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\tfs.codeplex\xaml\MVA\201311_Blend\DevicePanel\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-11-11T21:51:31.367</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

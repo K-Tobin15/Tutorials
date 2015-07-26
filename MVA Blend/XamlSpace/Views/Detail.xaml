@@ -1,0 +1,40 @@
+﻿<common:BaseView
+    xmlns:common="using:Shared.Common"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XamlSpace.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ViewModels="using:XamlSpace.ViewModels"
+    x:Class="XamlSpace.Views.Detail"
+    mc:Ignorable="d">
+
+    <Page.DataContext>
+        <ViewModels:DetailViewModel/>
+    </Page.DataContext>
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Images/Hero.jpg"/>
+        </Grid.Background>
+        <Hub>
+            <Hub.Background>
+                <ImageBrush Stretch="None" ImageSource="{Binding Character.Photo}" AlignmentX="Center" AlignmentY="Center" >
+                    <ImageBrush.RelativeTransform>
+                        <CompositeTransform CenterY="0.5" CenterX="0.5" ScaleX="2" ScaleY="2"/>
+                    </ImageBrush.RelativeTransform>
+                </ImageBrush>
+            </Hub.Background>
+            <Hub.Header>
+                <StackPanel Orientation="Horizontal">
+                    <Button Margin="0,0,40,0" Style="{StaticResource NavigationBackButtonNormalStyle}" Command="{Binding GoBackCommand, Mode=OneWay}" />
+                    <TextBlock>
+						<Run Text="{Binding Character.Name, FallbackValue=Name}" />
+						<LineBreak />
+						<Run Text="{Binding Character.Actor, FallbackValue=Name}" FontSize="11" />
+                    </TextBlock>
+                </StackPanel>
+            </Hub.Header>
+        </Hub>
+    </Grid>
+</common:BaseView>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JNIXON-XPSW81</Machine>
+    <WindowsUser>jnixon</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>3a4b6168-5734-42bb-b00d-48245c7450be</PackageIdentityName>
+    <RegisteredManifestChecksum>659938B2366804DCA1F983E69B2879DBFD6C7EB1B2A16652DF01A17390EDAEC6</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>3a4b6168-5734-42bb-b00d-48245c7450be_1.0.0.0_neutral__m8wq55j45v6p0</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>3a4b6168-5734-42bb-b00d-48245c7450be_m8wq55j45v6p0!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>3a4b6168-5734-42bb-b00d-48245c7450be</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Jerry</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-11-12T03:26:23.667</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\bin\Debug\Module05_Complete.exe">
+      <PackagePath>Module05_Complete.exe</PackagePath>
+      <Modified>2013-11-12T03:36:09.840</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-11-11T19:55:29.254</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-11-11T19:55:29.254</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-11-11T19:55:29.256</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-11-11T19:55:29.247</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2013-11-11T19:59:15.877</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\bin\Debug\Views\MainPage.xbf">
+      <PackagePath>Views\MainPage.xbf</PackagePath>
+      <Modified>2013-11-12T03:26:23.311</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\bin\Debug\Views\Settings.xbf">
+      <PackagePath>Views\Settings.xbf</PackagePath>
+      <Modified>2013-11-12T03:26:23.315</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\tfs.codeplex\xaml\MVA\201311_Blend\Module05_Complete\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-11-12T03:26:23.605</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

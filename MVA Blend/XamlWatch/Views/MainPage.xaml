@@ -1,0 +1,116 @@
+﻿<common:BaseView
+    xmlns:common="using:Shared.Common"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XamlWatch.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Controls="using:Shared.Controls"
+    xmlns:ViewModels="using:XamlWatch.ViewModels"
+    x:Class="XamlWatch.Views.MainPage"
+    mc:Ignorable="d">
+	<common:BaseView.Resources>
+		<Storyboard x:Name="Storyboard1"/>
+	</common:BaseView.Resources>
+    <Page.BottomAppBar>
+        <AppBar Background="#FF323232" BorderBrush="#FF323232">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal">
+                </StackPanel>
+                <StackPanel Grid.Column="1" HorizontalAlignment="Right" Orientation="Horizontal">
+                    <AppBarButton HorizontalAlignment="Stretch" Label="Purchase" VerticalAlignment="Stretch" Icon="Shop" Click="AppBarButton_Click"/>
+                    <AppBarButton HorizontalAlignment="Stretch" Label="Reset" VerticalAlignment="Stretch" Icon="Refresh" Command="{Binding ResetCommand, Mode=OneWay}"/>
+                </StackPanel>
+            </Grid>
+        </AppBar>
+    </Page.BottomAppBar>
+
+    <Page.DataContext>
+        <ViewModels:MainPageViewModel/>
+    </Page.DataContext>
+
+    <Grid Background="#5A0FC8">
+        <Hub Header="XAML Watch" Margin="0,0,0,16">
+            <Hub.Background>
+                <SolidColorBrush Color="#5A0FC8" />
+            </Hub.Background>
+            <HubSection Width="450" x:Name="WatchHubSection">
+                <HubSection.Background>
+                    <SolidColorBrush Color="{Binding SelectedColor.Color, Mode=OneWay}" Opacity=".5" />
+                </HubSection.Background>
+                <DataTemplate>
+                    <FlipView Margin="-40,0,-40,0">
+                        <ContentPresenter ContentTemplate="{StaticResource Watch}" />
+                        <ContentPresenter ContentTemplate="{StaticResource Watch}" />
+                        <ContentPresenter ContentTemplate="{StaticResource Watch}" />
+                    </FlipView>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Header="Theme">
+                <HubSection.Background>
+                    <SolidColorBrush Color="Black" Opacity=".4" />
+                </HubSection.Background>
+                <DataTemplate>
+                    <Controls:MyGridView ItemsSource="{Binding Colors}"  SelectionMode="Single" SelectedItem="{Binding SelectedColor, Mode=TwoWay}">
+                        <GridView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <VariableSizedWrapGrid ItemHeight="75" ItemWidth="150" MaximumRowsOrColumns="6" />
+                            </ItemsPanelTemplate>
+                        </GridView.ItemsPanel>
+                        <GridView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Height="75" Width="300">
+                                    <Grid.Background>
+                                        <SolidColorBrush Color="{Binding Color}" />
+                                    </Grid.Background>
+                                </Grid>
+                            </DataTemplate>
+                        </GridView.ItemTemplate>
+                    </Controls:MyGridView>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Header="Face">
+                <HubSection.Background>
+                    <SolidColorBrush Color="Black" Opacity=".2" />
+                </HubSection.Background>
+                <DataTemplate>
+                    <GridView ItemsSource="{Binding Faces}" SelectionMode="Single" SelectedItem="{Binding SelectedFace, Mode=TwoWay}">
+                        <GridView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Width="140" Height="140" Background="Black">
+                                    <Line Stroke="Red" StrokeThickness="4" X1="0" Y1="0" X2="150" Y2="150" />
+                                    <Image Stretch="UniformToFill" Source="{Binding Path}" />
+                                </Grid>
+                            </DataTemplate>
+                        </GridView.ItemTemplate>
+                    </GridView>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Header="Purchase History">
+                <HubSection.Background>
+                    <SolidColorBrush Color="Black" Opacity=".0" />
+                </HubSection.Background>
+                <DataTemplate>
+                    <GridView ItemsSource="{Binding Purchases}" SelectionMode="None">
+                        <GridView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Background="Silver">
+                                    <Grid Width="150" Height="215">
+                                        <Grid.Background>
+                                            <ImageBrush ImageSource="{Binding Bitmap}" Stretch="UniformToFill" AlignmentX="Center" AlignmentY="Center" />
+                                        </Grid.Background>
+                                    </Grid>
+                                </Grid>
+                            </DataTemplate>
+                        </GridView.ItemTemplate>
+                    </GridView>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+        <!--<Controls:AppBarHint />-->
+    </Grid>
+</common:BaseView>

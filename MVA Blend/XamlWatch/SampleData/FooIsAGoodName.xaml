@@ -1,0 +1,84 @@
+﻿<ViewModels:MainPageViewModel xmlns:ViewModels="using:XamlWatch.ViewModels" xmlns:Models="using:XamlWatch.Models" xmlns:Imaging="using:Windows.UI.Xaml.Media.Imaging" Day="Cras curabitur" HoursAngle="307.01" MinutesAngle="837.22" Orientation="Horizontal" SecondsAngle="294.66">
+	<ViewModels:MainPageViewModel.Colors>
+		<Models:ColorModel Color="#FFE30388" ColSpan="68" Index="21" Name="Duis phasellus nam aenean aliquam" RowSpan="94"/>
+		<Models:ColorModel Color="#FF62FF52" ColSpan="28" Index="83" Name="Sed class" RowSpan="68"/>
+		<Models:ColorModel Color="#FF9FC493" ColSpan="29" Index="93" Name="Mauris curae nunc amet ante" RowSpan="54"/>
+		<Models:ColorModel Color="#FF37910C" ColSpan="39" Index="89" Name="Consequat integer" RowSpan="23"/>
+		<Models:ColorModel Color="#FF619E0D" ColSpan="26" Index="70" Name="Donec dis maecenas" RowSpan="70"/>
+		<Models:ColorModel Color="#FF18F92D" ColSpan="77" Index="29" Name="Praesent arcu convallis nullam" RowSpan="10"/>
+		<Models:ColorModel Color="#FF6C42ED" ColSpan="67" Index="81" Name="Accumsan aptent" RowSpan="53"/>
+		<Models:ColorModel Color="#FF36B17D" ColSpan="14" Index="69" Name="Etiam est bibendum" RowSpan="93"/>
+		<Models:ColorModel Color="#FF70A8FA" ColSpan="22" Index="56" Name="Dignissim hac auctor" RowSpan="47"/>
+		<Models:ColorModel Color="#FF7D33C6" ColSpan="80" Index="68" Name="Congue quisque fusce" RowSpan="97"/>
+	</ViewModels:MainPageViewModel.Colors>
+	<ViewModels:MainPageViewModel.Faces>
+		<Models:FaceModel ColSpan="29" Index="35" Path="Dictumst leo" RowSpan="19"/>
+		<Models:FaceModel ColSpan="96" Index="29" Path="Vivamus aliquam" RowSpan="12"/>
+		<Models:FaceModel ColSpan="65" Index="91" Path="Vestibulum aliquet eget mus nec" RowSpan="70"/>
+		<Models:FaceModel ColSpan="75" Index="54" Path="Adipiscing parturient eleifend elementum" RowSpan="47"/>
+		<Models:FaceModel ColSpan="95" Index="35" Path="Morbi elit nulla" RowSpan="67"/>
+		<Models:FaceModel ColSpan="97" Index="53" Path="Proin blandit" RowSpan="87"/>
+		<Models:FaceModel ColSpan="25" Index="91" Path="Non cursus dictum commodo" RowSpan="92"/>
+		<Models:FaceModel ColSpan="63" Index="52" Path="Lectus facilisi augue vestibulum" RowSpan="10"/>
+		<Models:FaceModel ColSpan="16" Index="52" Path="Enim erat" RowSpan="30"/>
+		<Models:FaceModel ColSpan="49" Index="37" Path="Vestibulum adipiscing conubia parturient vestibulum" RowSpan="57"/>
+	</ViewModels:MainPageViewModel.Faces>
+	<ViewModels:MainPageViewModel.Purchases>
+		<Models:PurchaseModel ColSpan="90" Date="11/12/2013 13:58:02" Index="53" RowSpan="50">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+		<Models:PurchaseModel ColSpan="57" Date="11/12/2013 13:58:02" Index="60" RowSpan="13">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+		<Models:PurchaseModel ColSpan="76" Date="11/12/2013 13:58:02" Index="26" RowSpan="88">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+		<Models:PurchaseModel ColSpan="59" Date="11/12/2013 13:58:02" Index="20" RowSpan="28">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+		<Models:PurchaseModel ColSpan="86" Date="11/12/2013 13:58:02" Index="31" RowSpan="52">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+		<Models:PurchaseModel ColSpan="36" Date="11/12/2013 13:58:02" Index="88" RowSpan="10">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+		<Models:PurchaseModel ColSpan="53" Date="11/12/2013 13:58:02" Index="81" RowSpan="51">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+		<Models:PurchaseModel ColSpan="83" Date="11/12/2013 13:58:02" Index="53" RowSpan="66">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+		<Models:PurchaseModel ColSpan="77" Date="11/12/2013 13:58:02" Index="19" RowSpan="90">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+		<Models:PurchaseModel ColSpan="63" Date="11/12/2013 13:58:02" Index="81" RowSpan="25">
+			<Models:PurchaseModel.Bitmap>
+				<Imaging:RenderTargetBitmap/>
+			</Models:PurchaseModel.Bitmap>
+		</Models:PurchaseModel>
+	</ViewModels:MainPageViewModel.Purchases>
+	<ViewModels:MainPageViewModel.SelectedColor>
+		<Models:ColorModel Color="#FFE711EC" ColSpan="44" Index="46" Name="Lorem diam" RowSpan="67"/>
+	</ViewModels:MainPageViewModel.SelectedColor>
+	<ViewModels:MainPageViewModel.SelectedFace>
+		<Models:FaceModel ColSpan="95" Index="34" Path="Cubilia vestibulum dolor" RowSpan="55"/>
+	</ViewModels:MainPageViewModel.SelectedFace>
+</ViewModels:MainPageViewModel>

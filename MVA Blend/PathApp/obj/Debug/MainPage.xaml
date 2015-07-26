@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="PathApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PathApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="Layer_1" Width="800" Height="600" Canvas.Left="0" Canvas.Top="0">
+            <Path Width="624.139" Height="122.23" Canvas.Left="80.7654" Canvas.Top="74.8319" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FF000000" Data="M 186,193.5L 166.141,147.46L 207.125,118.576L 157.202,123.236L 142.395,75.332L 131.4,124.252L 81.2654,123.53L 124.393,149.104L 108.215,196.562L 145.864,163.448L 186,193.5 Z M 435.93,193.5L 416.07,147.46L 457.055,118.576L 407.131,123.236L 392.325,75.3319L 381.33,124.252L 331.195,123.53L 374.323,149.104L 358.145,196.562L 395.794,163.448L 435.93,193.5 Z M 307.334,193.5L 287.475,147.46L 328.459,118.576L 278.536,123.236L 263.729,75.332L 252.735,124.252L 202.6,123.53L 245.728,149.104L 229.549,196.562L 267.198,163.448L 307.334,193.5 Z M 557.264,193.5L 537.405,147.46L 578.389,118.576L 528.466,123.236L 513.659,75.3319L 502.665,124.252L 452.53,123.53L 495.658,149.104L 479.479,196.562L 517.128,163.448L 557.264,193.5 Z M 683.28,193.5L 663.421,147.461L 704.405,118.576L 654.482,123.236L 639.675,75.332L 628.68,124.252L 578.546,123.53L 621.674,149.104L 605.495,196.562L 643.144,163.448L 683.28,193.5 Z ">
+                <Path.Fill>
+                    <LinearGradientBrush StartPoint="-0.000802364,0.5" EndPoint="1.0008,0.5">
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStop Color="#FF000000" Offset="{Binding Value, ElementName=slider}"/>
+                            <GradientStop Color="#FFFFFFFF" Offset="{Binding Value, ElementName=slider}"/>
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </Path.Fill>
+            </Path>
+            <Slider x:Name="slider" Height="64" Canvas.Left="37" Canvas.Top="252" Width="704" Maximum="1" StepFrequency="0.01"/>
+        </Canvas>
+
+    </Grid>
+</Page>
+
